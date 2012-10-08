@@ -56,3 +56,27 @@ to since _this sample_ is designed to show you how to install the edge version
 of modules. However my normal app include it.
 
 [1]: https://gist.github.com/3854887
+
+## Installing edge modules ##
+
+Open up the `package.json` file and change the hem and spine dependencies to
+their github repositories.
+
+* `"hem": "git://github.com/maccman/hem#master"`
+* `"spine": "git://github.com/maccman/spine#master"`
+
+These replace the already defined versions numbers such as `"~0.1.8"` or
+`"~1.0.7"`.
+
+    {
+      "name": "app",
+      "version": "0.0.1",
+      "dependencies": {
+        "serveup": "~0.0.5",
+        "hem": "git://github.com/maccman/hem#master",
+        "es5-shimify": "~0.0.1",
+        "json2ify": "~0.0.1",
+        "jqueryify": "~0.0.1",
+        "spine": "git://github.com/maccman/spine#master"
+      }
+    }
