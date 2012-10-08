@@ -100,3 +100,28 @@ the `spine app myApp` command.
       "version": "0.0.1",
       /* ... snipped ... */
     }
+
+## Sanity check before you start coding ##
+
+If you wish to check that all the cogs are working together, fire up the hem
+server and navigate to the two pages. Since nothing is set to run you won't get
+any visual feed back but open the JavaScript console to make sure everything
+loaded without any error messages.
+
+    $ hem server
+
+Look at http://0.0.0.0:9294/ and http://0.0.0.0:9294/test/
+
+## Final thoughts ##
+
+I wrote this to document the steps I have to take to get a spine application
+out-of-the-box running. I found that the tests were severly broken and needed
+the latest. According the git repository the commits that fix this issue is
+more than 3 months old however the latest version (0.1.9) was released before
+those commits and that is why the latest HEAD needed to be used.
+
+Also when you run `npm install .` it will install the binarys into
+`./node_module/.bin` therefor if you did not install hem via github then you
+are required to run it from the node_module directory instead.
+
+    $ ./node_module/.bin/hem server
