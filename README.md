@@ -89,3 +89,14 @@ the two lines in `public/index.html`:
     <!-- Getting started script - should be removed -->
     <script src="http://maccman-spine.herokuapp.com/start.js" type="text/javascript" charset="utf-8"></script>
 
+## Rename the application ##
+
+A newly created spine app defaults to the descriptive name of **app**. You have
+to manually edit the `package.json` file to name the app as you did above in
+the `spine app myApp` command.
+
+    {
+      "name": "myApp",
+      "version": "0.0.1",
+      /* ... snipped ... */
+    }
