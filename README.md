@@ -46,3 +46,13 @@ upgrade hem:
 Now you are ready to create your first application:
 
     $ spine app myApp
+
+## gitignore ##
+
+The ignore file for git is missing in the initial creation. This is minor but
+gets confusing so I add a sane ignore file. Please see [this article][1] on a
+discussion of whether you sould ignore the node_modules are not. I choose not
+to since _this sample_ is designed to show you how to install the edge version
+of modules. However my normal app include it.
+
+[1]: https://gist.github.com/3854887
