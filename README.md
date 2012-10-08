@@ -80,3 +80,12 @@ These replace the already defined versions numbers such as `"~0.1.8"` or
         "spine": "git://github.com/maccman/spine#master"
       }
     }
+
+## Remove getting started script ##
+
+As the docs explain you have to remove the getting started script. **Delete**
+the two lines in `public/index.html`:
+
+    <!-- Getting started script - should be removed -->
+    <script src="http://maccman-spine.herokuapp.com/start.js" type="text/javascript" charset="utf-8"></script>
+
